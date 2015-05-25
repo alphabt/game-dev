@@ -6,12 +6,12 @@ public class SceneFadeInOut : MonoBehaviour
 {
 	public float fadeSpeed = 1.5f;
 	private bool sceneStarting = true;
-	GUITexture guiTexture;
+	GUITexture screenFader;
 
 	void Awake()
 	{
-		guiTexture = GetComponent<GUITexture>();
-		guiTexture.pixelInset = new Rect(0f, 0f, Screen.width, Screen.height);
+		screenFader = GetComponent<GUITexture>();
+		screenFader.pixelInset = new Rect(0f, 0f, Screen.width, Screen.height);
 	}
 
 	void Update()
@@ -24,32 +24,32 @@ public class SceneFadeInOut : MonoBehaviour
 
 	void FadeToClear()
 	{
-		guiTexture.color = Color.Lerp (guiTexture.color, Color.clear, fadeSpeed * Time.deltaTime);
+		screenFader.color = Color.Lerp (screenFader.color, Color.clear, fadeSpeed * Time.deltaTime);
 	}
 
 	void FadeToBlack()
 	{
-		guiTexture.color = Color.Lerp (guiTexture.color, Color.black, fadeSpeed * Time.deltaTime);
+		screenFader.color = Color.Lerp (screenFader.color, Color.black, fadeSpeed * Time.deltaTime);
 	}
 
 	void StartScene()
 	{
 		FadeToClear();
 
-		if (guiTexture.color.a <= 0.05f)
+		if (screenFader.color.a <= 0.05f)
 		{
-			guiTexture.color = Color.clear;
-			guiTexture.enabled = false;
+			screenFader.color = Color.clear;
+			screenFader.enabled = false;
 			sceneStarting = false;
 		}
 	}
 
 	public void EndScene()
 	{
-		guiTexture.enabled = true;
+		screenFader.enabled = true;
 		FadeToBlack();
 
-		if (guiTexture.color.a >= 0.95f)
+		if (screenFader.color.a >= 0.95f)
 		{
 			Application.LoadLevel(1);
 		}

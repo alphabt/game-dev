@@ -4,7 +4,7 @@ using System.Collections;
 public class Tags : MonoBehaviour {
 
 	public const string player = "Player";
-	public const string alarm = "Alarm";
+	public const string alarmLight = "AlarmLight";
 	public const string siren = "Siren";
 	public const string gameController  = "GameController";
 	public const string mainLight = "MainLight";
