@@ -268,20 +268,8 @@ Prefab:
       value: fx_laserFence_lasers_001
       objectReference: {fileID: 0}
     - target: {fileID: 8260058, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
-      propertyPath: m_PlayOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6564178, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8260058, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
-      propertyPath: MaxDistance
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 8260058, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 1
+      propertyPath: m_Volume
+      value: .100000001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
@@ -597,6 +585,10 @@ Prefab:
     - target: {fileID: 8260058, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260058, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
+      propertyPath: m_Volume
+      value: .100000001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
@@ -5678,6 +5670,10 @@ Prefab:
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8260058, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
+      propertyPath: m_Volume
+      value: .100000001
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
   m_IsPrefabParent: 0
@@ -5739,6 +5735,10 @@ Prefab:
     - target: {fileID: 8260058, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260058, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
+      propertyPath: m_Volume
+      value: .100000001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
@@ -6183,6 +6183,10 @@ Prefab:
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8260058, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
+      propertyPath: m_Volume
+      value: .100000001
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
   m_IsPrefabParent: 0
@@ -6362,6 +6366,20 @@ MonoBehaviour:
   shoutingClip: {fileID: 8300000, guid: f2e0ffd43812bf642a502c434b572c75, type: 3}
   turnSmoothing: 15
   speedDampTime: .100000001
+--- !u!114 &1692020843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1692020835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e21d47f94e474b88bef7e15c23b16f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  resetAfterDeathTime: 5
+  deathClip: {fileID: 0}
 --- !u!1001 &1788806856
 Prefab:
   m_ObjectHideFlags: 0
@@ -6651,6 +6669,10 @@ Prefab:
     - target: {fileID: 8260058, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260058, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
+      propertyPath: m_Volume
+      value: .100000001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
