@@ -267,6 +267,22 @@ Prefab:
       propertyPath: m_Name
       value: fx_laserFence_lasers_001
       objectReference: {fileID: 0}
+    - target: {fileID: 8260058, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564178, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260058, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
+      propertyPath: MaxDistance
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260058, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
   m_IsPrefabParent: 0
@@ -569,6 +585,18 @@ Prefab:
     - target: {fileID: 11462806, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
       propertyPath: offTime
       value: 1.54999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260058, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564178, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260058, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
@@ -5638,6 +5666,18 @@ Prefab:
       propertyPath: m_Name
       value: fx_laserFence_lasers_004
       objectReference: {fileID: 0}
+    - target: {fileID: 8260058, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564178, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260058, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
   m_IsPrefabParent: 0
@@ -5687,6 +5727,18 @@ Prefab:
     - target: {fileID: 165230, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
       propertyPath: m_Name
       value: fx_laserFence_lasers_003
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260058, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564178, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260058, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
@@ -6119,6 +6171,18 @@ Prefab:
       propertyPath: m_Name
       value: fx_laserFence_lasers_002
       objectReference: {fileID: 0}
+    - target: {fileID: 8260058, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564178, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260058, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
   m_IsPrefabParent: 0
@@ -6284,6 +6348,20 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1692020842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1692020835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a74a199d5c420432ea771f475374a05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shoutingClip: {fileID: 8300000, guid: f2e0ffd43812bf642a502c434b572c75, type: 3}
+  turnSmoothing: 15
+  speedDampTime: .100000001
 --- !u!1001 &1788806856
 Prefab:
   m_ObjectHideFlags: 0
@@ -6561,6 +6639,18 @@ Prefab:
     - target: {fileID: 11462806, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
       propertyPath: offTime
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260058, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564178, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8260058, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b00bdc8b2a7354c09ae2e8bebf67e3a5, type: 2}
