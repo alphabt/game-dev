@@ -25,7 +25,7 @@ public class LaserBlinking : MonoBehaviour
 			SwitchBeam();
 		}
 
-		if (meshRenderer.enabled && timer >= offTime)
+		if (!meshRenderer.enabled && timer >= offTime)
 		{
 			SwitchBeam();
 		}

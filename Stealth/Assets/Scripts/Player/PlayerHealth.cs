@@ -51,7 +51,7 @@ public class PlayerHealth : MonoBehaviour
 
 	void PlayerDead()
 	{
-		if (anim.GetCurrentAnimatorStateInfo(0).nameHash == hash.dyingState)
+		if (anim.GetCurrentAnimatorStateInfo(0).fullPathHash == hash.dyingState)
 		{
 			anim.SetBool (hash.deadBool, false);
 		}
