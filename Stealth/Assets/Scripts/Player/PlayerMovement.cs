@@ -9,16 +9,16 @@ public class PlayerMovement : MonoBehaviour
 
 	private Animator anim;
 	private HashIDs hash;
-	private Rigidbody rigidbody;
-	private AudioSource audio;
+	private Rigidbody playerRigidbody;
+	private AudioSource playerAudio;
 
 	void Awake()
 	{
 		anim = GetComponent<Animator>();
 		hash = GameObject.FindGameObjectWithTag(Tags.gameController).GetComponent<HashIDs>();
 		anim.SetLayerWeight (1, 1f);
-		rigidbody = GetComponent<Rigidbody>();
-		audio = GetComponent<AudioSource>();
+		playerRigidbody = GetComponent<Rigidbody>();
+		playerAudio = GetComponent<AudioSource>();
 	}
 
 	void FixedUpdate()
@@ -56,22 +56,22 @@ public class PlayerMovement : MonoBehaviour
 	{
 		Vector3 targetDirection = new Vector3(horizontal, 0f, vertical);
 		Quaternion targetQuaternion = Quaternion.LookRotation (targetDirection, Vector3.up);
-		Quaternion newRotation = Quaternion.Lerp (rigidbody.rotation, targetQuaternion, turnSmoothing * Time.deltaTime);
-		rigidbody.MoveRotation(newRotation);
+		Quaternion newRotation = Quaternion.Lerp (playerRigidbody.rotation, targetQuaternion, turnSmoothing * Time.deltaTime);
+		playerRigidbody.MoveRotation(newRotation);
 	}
 
 	void AudioManagement(bool shout)
 	{
 		if (anim.GetCurrentAnimatorStateInfo(0).shortNameHash == hash.locomotionState)
 		{
-			if (!audio.isPlaying)
+			if (!playerAudio.isPlaying)
 			{
-				audio.Play();
+				playerAudio.Play();
 			}
 		}
 		else
 		{
-			audio.Stop();
+			playerAudio.Stop();
 		}
 
 		if (shout)
