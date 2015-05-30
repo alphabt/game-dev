@@ -20,7 +20,6 @@ public class EnemyAnimation : MonoBehaviour
 		anim = GetComponent<Animator>();
 		hash = GameObject.FindGameObjectWithTag(Tags.gameController).GetComponent<HashIDs>();
 
-		animSetup = GetComponent<AnimatorSetup>();
 		nav.updateRotation = false;
 		animSetup = new AnimatorSetup(anim, hash);
 

@@ -51,7 +51,7 @@ public class SceneFadeInOut : MonoBehaviour
 
 		if (screenFader.color.a >= 0.95f)
 		{
-			Application.LoadLevel(1);
+			Application.LoadLevel(0);
 		}
 	}
 }
