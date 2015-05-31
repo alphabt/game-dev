@@ -53,7 +53,7 @@ public class EnemySight : MonoBehaviour
 
 	void OnTriggerStay(Collider other)
 	{
-		if (other.gameObject == player)
+		if (other.gameObject == player && playerHealth.health > 0)
 		{
 			playerInSight = false;
 
