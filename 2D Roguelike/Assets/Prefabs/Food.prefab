@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 494176}
   - 212: {fileID: 21223778}
   - 61: {fileID: 6116022}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Food
   m_TagString: Food
   m_Icon: {fileID: 0}

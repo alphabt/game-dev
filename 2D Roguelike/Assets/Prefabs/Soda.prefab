@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 442012}
   - 212: {fileID: 21264070}
   - 61: {fileID: 6161050}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Soda
   m_TagString: Soda
   m_Icon: {fileID: 0}
