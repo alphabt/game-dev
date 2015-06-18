@@ -12,6 +12,8 @@ public class GameController : MonoBehaviour
     public GameObject winText;
     public GameObject restartText;
     public GameObject ball;
+	public GameObject player1;
+	public GameObject player2;
 
     private int player1Score;
     private int player2Score;
@@ -20,11 +22,6 @@ public class GameController : MonoBehaviour
     {
         player1Score = 0;
         player2Score = 0;
-//        float camHalfHeight = Camera.main.orthographicSize;
-//        float camHalfWidth = Camera.main.aspect * camHalfHeight;
-//
-//        GameObject newBoard = Instantiate(board, Vector3.zero, Quaternion.identity) as GameObject;
-//        newBoard.transform.localScale = new Vector3(camHalfWidth * 2f * 100, camHalfHeight * 2f * 100, 0f);
     }
 
     void Update()
@@ -78,5 +75,9 @@ public class GameController : MonoBehaviour
 
         // Disable ball rendering
         ball.SetActive(false);
+
+		// Disable paddle rendering
+		player1.SetActive(false);
+		player2.SetActive(false);
     }
 }

@@ -87,6 +87,10 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &13585736 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 182860, guid: d47d7a1d1f01a4f74926c9c7bce7045b, type: 2}
+  m_PrefabInternal: {fileID: 1698610049}
 --- !u!1 &558296932
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,6 +336,10 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!1 &1192485393 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 182860, guid: d47d7a1d1f01a4f74926c9c7bce7045b, type: 2}
+  m_PrefabInternal: {fileID: 1483491699}
 --- !u!1 &1281947740
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,6 +386,8 @@ MonoBehaviour:
   winText: {fileID: 1910172245}
   restartText: {fileID: 1794330490}
   ball: {fileID: 1581794935}
+  player1: {fileID: 13585736}
+  player2: {fileID: 1192485393}
 --- !u!1 &1435174859
 GameObject:
   m_ObjectHideFlags: 0
