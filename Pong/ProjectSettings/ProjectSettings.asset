@@ -9,8 +9,8 @@ PlayerSettings:
   targetDevice: 2
   targetResolution: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: Pong
+  companyName: Bientai Industry
+  productName: Entropy Dot
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_ShowUnitySplashScreen: 1
@@ -28,8 +28,8 @@ PlayerSettings:
   androidShowActivityIndicatorOnLoading: -1
   iosAppInBackgroundBehavior: 0
   displayResolutionDialog: 1
-  allowedAutorotateToPortrait: 1
-  allowedAutorotateToPortraitUpsideDown: 1
+  allowedAutorotateToPortrait: 0
+  allowedAutorotateToPortraitUpsideDown: 0
   allowedAutorotateToLandscapeRight: 1
   allowedAutorotateToLandscapeLeft: 1
   useOSAutorotation: 1
@@ -77,6 +77,7 @@ PlayerSettings:
   metroEnableIndependentInputSource: 0
   metroEnableLowLatencyPresentationAPI: 0
   xboxOneDisableKinectGpuReservation: 0
+  virtualRealitySupported: 0
   productGUID: 6413724bb4538406eb3e601ab39e2ba8
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 9
@@ -254,34 +255,33 @@ PlayerSettings:
   psp2InfoBarOnStartup: 0
   psp2InfoBarColor: 0
   psmSplashimage: {fileID: 0}
-  virtualRealitySupported: 0
   spritePackerPolicy: 
   scriptingDefineSymbols:
     1: 
     2: 
     4: 
-  metroPackageName: Pong
-  metroPackageLogo: 
+  metroPackageName: EntropyDot
+  metroPackageLogo: SubmissionAssets/Logos/Logo_50x50.png
   metroPackageLogo140: 
   metroPackageLogo180: 
-  metroPackageLogo240: 
-  metroPackageVersion: 
-  metroCertificatePath: 
+  metroPackageLogo240: SubmissionAssets/Logos/Logo_120x120.png
+  metroPackageVersion: 1.0.0.0
+  metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: Pong
+  metroCertificateSubject: DefaultCompany
+  metroCertificateIssuer: DefaultCompany
+  metroCertificateNotAfter: 805ae6f1e7cdd101
+  metroApplicationDescription: Entropy Dot
   metroStoreTileLogo80: 
-  metroStoreTileLogo: 
+  metroStoreTileLogo: SubmissionAssets/Logos/Logo_150x150.png
   metroStoreTileLogo140: 
   metroStoreTileLogo180: 
   metroStoreTileWideLogo80: 
-  metroStoreTileWideLogo: 
+  metroStoreTileWideLogo: SubmissionAssets/Logos/Logo_310x150.png
   metroStoreTileWideLogo140: 
   metroStoreTileWideLogo180: 
   metroStoreTileSmallLogo80: 
-  metroStoreTileSmallLogo: 
+  metroStoreTileSmallLogo: SubmissionAssets/Logos/Logo_30x30.png
   metroStoreTileSmallLogo140: 
   metroStoreTileSmallLogo180: 
   metroStoreSmallTile80: 
@@ -297,31 +297,46 @@ PlayerSettings:
   metroStoreSplashScreenImage180: 
   metroPhoneAppIcon: 
   metroPhoneAppIcon140: 
-  metroPhoneAppIcon240: 
+  metroPhoneAppIcon240: SubmissionAssets/Logos/Logo_106x106.png
   metroPhoneSmallTile: 
   metroPhoneSmallTile140: 
-  metroPhoneSmallTile240: 
+  metroPhoneSmallTile240: SubmissionAssets/Logos/Logo_170x170.png
   metroPhoneMediumTile: 
   metroPhoneMediumTile140: 
-  metroPhoneMediumTile240: 
+  metroPhoneMediumTile240: SubmissionAssets/Logos/Logo_360x360.png
   metroPhoneWideTile: 
   metroPhoneWideTile140: 
   metroPhoneWideTile240: 
   metroPhoneSplashScreenImage: 
   metroPhoneSplashScreenImage140: 
   metroPhoneSplashScreenImage240: 
-  metroTileShortName: 
+  metroTileShortName: Entropy Dot
   metroCommandLineArgsFile: 
   metroTileShowName: 0
-  metroMediumTileShowName: 0
-  metroLargeTileShowName: 0
-  metroWideTileShowName: 0
+  metroMediumTileShowName: 1
+  metroLargeTileShowName: 1
+  metroWideTileShowName: 1
   metroDefaultTileSize: 1
   metroTileForegroundText: 1
   metroTileBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   metroSplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   metroSplashScreenUseBackgroundColor: 0
-  platformCapabilities: {}
+  platformCapabilities:
+    WindowsStoreApps:
+      EnterpriseAuthentication: False
+      HumanInterfaceDevice: False
+      InternetClient: False
+      InternetClientServer: False
+      Location: False
+      Microphone: False
+      MusicLibrary: False
+      PicturesLibrary: False
+      PrivateNetworkClientServer: False
+      Proximity: False
+      RemovableStorage: False
+      SharedUserCertificates: False
+      VideosLibrary: False
+      WebCam: False
   metroFTAName: 
   metroFTAFileTypes: []
   metroProtocolName: 
@@ -374,12 +389,16 @@ PlayerSettings:
   XboxOneAllowedProductIds: []
   XboxOnePersistentLocalStorageSize: 0
   intPropertyNames:
+  - Metro::ScriptingBackend
+  - WP8::ScriptingBackend
   - WebGL::ScriptingBackend
   - WebGL::audioCompressionFormat
   - WebGL::exceptionSupport
   - WebGL::memorySize
   - iOS::Architecture
   - iOS::ScriptingBackend
+  Metro::ScriptingBackend: 2
+  WP8::ScriptingBackend: 2
   WebGL::ScriptingBackend: 1
   WebGL::audioCompressionFormat: 4
   WebGL::exceptionSupport: 1
@@ -389,9 +408,11 @@ PlayerSettings:
   boolPropertyNames:
   - WebGL::analyzeBuildSize
   - WebGL::dataCaching
+  - WebGL::useEmbeddedResources
   - XboxOne::enus
   WebGL::analyzeBuildSize: 0
   WebGL::dataCaching: 0
+  WebGL::useEmbeddedResources: 0
   XboxOne::enus: 1
   stringPropertyNames:
   - WebGL::emscriptenArgs
