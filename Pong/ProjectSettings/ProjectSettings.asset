@@ -77,14 +77,13 @@ PlayerSettings:
   metroEnableIndependentInputSource: 0
   metroEnableLowLatencyPresentationAPI: 0
   xboxOneDisableKinectGpuReservation: 0
-  virtualRealitySupported: 0
   productGUID: 6413724bb4538406eb3e601ab39e2ba8
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 9
   AndroidPreferredInstallLocation: 1
   aotOptions: 
   apiCompatibilityLevel: 2
-  iPhoneStrippingLevel: 0
+  iPhoneStrippingLevel: 1
   iPhoneScriptCallOptimization: 0
   ForceInternetPermission: 0
   ForceSDCardPermission: 0
@@ -255,6 +254,7 @@ PlayerSettings:
   psp2InfoBarOnStartup: 0
   psp2InfoBarColor: 0
   psmSplashimage: {fileID: 0}
+  virtualRealitySupported: 0
   spritePackerPolicy: 
   scriptingDefineSymbols:
     1: 
@@ -401,7 +401,7 @@ PlayerSettings:
   WP8::ScriptingBackend: 2
   WebGL::ScriptingBackend: 1
   WebGL::audioCompressionFormat: 4
-  WebGL::exceptionSupport: 1
+  WebGL::exceptionSupport: 0
   WebGL::memorySize: 256
   iOS::Architecture: 2
   iOS::ScriptingBackend: 1
@@ -411,7 +411,7 @@ PlayerSettings:
   - WebGL::useEmbeddedResources
   - XboxOne::enus
   WebGL::analyzeBuildSize: 0
-  WebGL::dataCaching: 0
+  WebGL::dataCaching: 1
   WebGL::useEmbeddedResources: 0
   XboxOne::enus: 1
   stringPropertyNames:
