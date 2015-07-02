@@ -32,7 +32,7 @@ public class GameController : MonoBehaviour
 
         if (gameOver)
         {
-            if (Input.GetKeyDown(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.Return) || Input.touches.Length > 0)
             {
                 Application.LoadLevel(Application.loadedLevel);
             }
