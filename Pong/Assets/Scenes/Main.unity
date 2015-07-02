@@ -380,7 +380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOver: 0
-  winScore: 5
+  winScore: 10
   player1ScoreText: {fileID: 1871104801}
   player2ScoreText: {fileID: 1487152786}
   winText: {fileID: 1910172245}
@@ -509,6 +509,10 @@ Prefab:
       propertyPath: playerResetPos.x
       value: -4.5
       objectReference: {fileID: 0}
+    - target: {fileID: 11438394, guid: d47d7a1d1f01a4f74926c9c7bce7045b, type: 2}
+      propertyPath: particle
+      value: 
+      objectReference: {fileID: 102402, guid: 6d1ade0bd61d54ad393d15f9953915e6, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d47d7a1d1f01a4f74926c9c7bce7045b, type: 2}
   m_IsPrefabParent: 0
@@ -543,8 +547,8 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: .5, y: 1}
   m_AnchorMax: {x: .5, y: 1}
-  m_AnchoredPosition: {x: -30, y: -20}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -90, y: -20}
+  m_SizeDelta: {x: 160, y: 40}
   m_Pivot: {x: .5, y: 1}
 --- !u!114 &1487152786
 MonoBehaviour:
@@ -565,8 +569,8 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
+    m_MaxSize: 72
+    m_Alignment: 5
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
@@ -1037,6 +1041,10 @@ Prefab:
       propertyPath: m_Name
       value: Player1
       objectReference: {fileID: 0}
+    - target: {fileID: 11438394, guid: d47d7a1d1f01a4f74926c9c7bce7045b, type: 2}
+      propertyPath: particle
+      value: 
+      objectReference: {fileID: 102402, guid: 6d1ade0bd61d54ad393d15f9953915e6, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d47d7a1d1f01a4f74926c9c7bce7045b, type: 2}
   m_IsPrefabParent: 0
@@ -1137,8 +1145,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: 1}
   m_AnchorMax: {x: .5, y: 1}
-  m_AnchoredPosition: {x: 30, y: -20}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 90, y: -20}
+  m_SizeDelta: {x: 160, y: 40}
   m_Pivot: {x: .5, y: 1}
 --- !u!114 &1871104801
 MonoBehaviour:
@@ -1159,8 +1167,8 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
+    m_MaxSize: 72
+    m_Alignment: 3
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
