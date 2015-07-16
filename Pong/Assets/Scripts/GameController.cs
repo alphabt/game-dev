@@ -9,12 +9,14 @@ public class GameController : MonoBehaviour
     public int winScore;
     public TextMesh player1ScoreText;
     public TextMesh player2ScoreText;
+    public GameObject startText;
     public GameObject winText;
     public GameObject restartText;
     public GameObject ball;
 	public GameObject player1;
 	public GameObject player2;
 
+    private bool waitingToStart;
     private int player1Score;
     private int player2Score;
 
@@ -22,6 +24,7 @@ public class GameController : MonoBehaviour
     {
         player1Score = 0;
         player2Score = 0;
+        waitingToStart = true;
     }
 
     void Update()
@@ -30,9 +33,19 @@ public class GameController : MonoBehaviour
             Application.Quit();
         }
 
+        if (waitingToStart)
+        {
+            if (Input.anyKey || Input.touches.Length > 0)
+            {
+                startText.SetActive(false);
+                ToggleGamePlay(true);
+                waitingToStart = false;
+            }
+        }
+
         if (gameOver)
         {
-            if (Input.GetKeyDown(KeyCode.Return) || Input.touches.Length > 0)
+            if (Input.anyKey || Input.touches.Length > 0)
             {
                 Application.LoadLevel(Application.loadedLevel);
             }
@@ -73,11 +86,16 @@ public class GameController : MonoBehaviour
         // Display restart text
         restartText.SetActive(true);
 
-        // Disable ball rendering
-        ball.SetActive(false);
+        ToggleGamePlay(false);
+    }
 
-		// Disable paddle rendering
-		player1.SetActive(false);
-		player2.SetActive(false);
+    private void ToggleGamePlay(bool enable)
+    {
+        // Disable ball rendering
+        ball.SetActive(enable);
+        
+        // Disable paddle rendering
+        player1.SetActive(enable);
+        player2.SetActive(enable);
     }
 }
