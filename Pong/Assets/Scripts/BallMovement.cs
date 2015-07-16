@@ -9,6 +9,7 @@ public class BallMovement : MonoBehaviour
     private Vector2 direction;
     private Vector2 resetPos;
     private bool isReset;
+    private float xDirection;
     
     public void Awake()
     {
@@ -16,6 +17,7 @@ public class BallMovement : MonoBehaviour
         gameController = GameObject.FindGameObjectWithTag(Tags.GameController).GetComponent<GameController>();
         resetPos = new Vector2(0, 0);
         isReset = true;
+        xDirection = 1f;
     }
     
     public void Update()
@@ -24,7 +26,8 @@ public class BallMovement : MonoBehaviour
         if (isReset)
         {
             isReset = false;
-            direction = new Vector2(1, Random.Range(-0.5f, 0.5f));
+            direction = new Vector2(xDirection, Random.Range(-0.5f, 0.5f));
+            xDirection = -xDirection;
             SetDirection(direction);
         }
     }
