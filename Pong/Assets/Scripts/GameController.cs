@@ -7,8 +7,8 @@ public class GameController : MonoBehaviour
     [HideInInspector]
     public bool gameOver;
     public int winScore;
-    public Text player1ScoreText;
-    public Text player2ScoreText;
+    public TextMesh player1ScoreText;
+    public TextMesh player2ScoreText;
     public GameObject winText;
     public GameObject restartText;
     public GameObject ball;
