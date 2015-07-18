@@ -731,6 +731,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5071022, guid: d47d7a1d1f01a4f74926c9c7bce7045b, type: 2}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d47d7a1d1f01a4f74926c9c7bce7045b, type: 2}
   m_IsPrefabParent: 0
@@ -985,7 +989,7 @@ Rigidbody2D:
   m_AngularDrag: 0
   m_GravityScale: 0
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
@@ -1199,6 +1203,10 @@ Prefab:
       objectReference: {fileID: 102402, guid: 6d1ade0bd61d54ad393d15f9953915e6, type: 2}
     - target: {fileID: 182860, guid: d47d7a1d1f01a4f74926c9c7bce7045b, type: 2}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5071022, guid: d47d7a1d1f01a4f74926c9c7bce7045b, type: 2}
+      propertyPath: m_Interpolate
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -25,6 +25,8 @@ public class GameController : MonoBehaviour
         player1Score = 0;
         player2Score = 0;
         waitingToStart = true;
+
+        Application.targetFrameRate = 60;
     }
 
     void Update()
