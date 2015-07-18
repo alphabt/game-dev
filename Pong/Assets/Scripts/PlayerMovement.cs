@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
                 }
             }
 
-#if UNITY_EDITOR || UNITY_STANDALONE || UNITY_WEBPLAYER
+            #if UNITY_EDITOR || UNITY_STANDALONE || UNITY_WEBPLAYER || UNITY_WEBGL
 
             // Keyboard Control
             int moveVertical;
@@ -60,8 +60,8 @@ public class PlayerMovement : MonoBehaviour
                 rigidbody2d.position.x,
                 Mathf.Clamp(newYPos, playerYMin, playerYMax)
             );
-#endif
 
+            #endif
         }
     }
 }
